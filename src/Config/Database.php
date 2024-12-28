@@ -19,12 +19,3 @@ class Database {
         return $this->conn;
     }
 }
-
-$db = new Database();
-$conn = $db->getConnection();
-
-if ($conn) {
-    echo "Connexion réussie à la base de données.";
-} else {
-    echo "Impossible de se connecter à la base de données.";
-}
